@@ -1,0 +1,135 @@
+
+
+
+#cart table{
+   width: 100%;
+   border-collapse: collapse;
+   table-layout: fixed;
+   white-space: nowrap;
+}
+
+#cart table img{
+width: 6rem;
+
+}
+
+#cart tr{
+   display: flex;
+   justify-content: space-around;
+}
+
+
+#cart table thead {
+   transition: 0.5s ease;
+   border: 1px solid #e2e9e1;
+   border-left: none;
+   border-right: none;
+}
+
+#cart table thead td {
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 13px;
+   padding: 18px 0 ;
+}
+#cart tbody{
+   border: 1px solid #e2e9e1;
+}
+
+#cart tbody td{
+   padding: 1rem 0;
+}
+
+/*   */
+
+#cart1 table {
+   width: 100%;
+   border-collapse: collapse;
+   table-layout: fixed;
+   white-space: nowrap;
+}
+
+#cart1 table img {
+   width: 6rem;
+
+}
+
+#cart1 tr {
+   display: flex;
+   justify-content: space-around;
+
+}
+
+#cart1 tr input {
+   width: 30px;
+   height: 30px;
+}
+
+#cart1 table thead {
+   border: 1px solid #e2e9e1;
+   border-left: none;
+   border-right: none;
+}
+
+#cart1 table thead td {
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 13px;
+   padding: 18px 0;
+}
+
+#cart1 tbody {
+   display: flex;
+   border: 1px solid #e2e9e1;
+}
+
+#cart1 tbody td {
+   padding: 1rem 0;
+}
+
+
+.delete-button{
+   border: none;
+   background: transparent;
+}
+.delete-button:hover{
+   cursor: pointer;
+}
+
+.delete-button .bx-x{
+   width: 20px;
+}
+
+#total-price{
+   color: var(--secound-text-color);
+   margin: 3rem;
+   text-align: center;
+}
+
+#total-price span{
+   color: var(--main-color);
+}
+
+#wrapper .wrapper__button {
+   margin-top: 30px;
+}
+
+.pay{
+   margin-top: 1rem;
+   width: 5rem;
+   height: 2.5rem;
+   background-color: var(--main-color);
+   border: 1px solid var(--main-color);
+   color: #fff;
+   font-size: 16px;
+   border-radius: 15px;
+   font-weight: 700;
+}
+
+.pay:hover {
+   background-color: #0c504b;
+   cursor: pointer;
+}
+
+
+

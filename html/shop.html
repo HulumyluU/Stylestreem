@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ecmo</title>
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+   <section id="header">
+      <a href="../index.html"><img src="/img/logo.png" class="logo" alt=""></a>
+      <div>
+         <ul id="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class='bx bx-shopping-bag'></i></a><span class="lg-bag"></span></li>
+            <a href="#" id="close"><i class='bx bx-x-circle'></i></a>
+         </ul>
+      </div>
+      <div id="mobile">
+         <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+         <i id="bar" class='bx bx-menu-alt-right'></i>
+      </div>
+   </section>   
+
+   <section id="page-header">
+      <h2>#stayhome</h2>
+      <p>Save more with coupons # up to 70 %</p>
+   </section>
+
+   <section id="product1" class="section-p1">
+      <div class="pro-container">
+         <div class="pro">
+            <img id="parseImg" src="/img/productsNew/product1.jpg" onclick="renderImage('/img/productsNew/product1.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product1.jpg')" class="add-to-cart"><i class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img id="parseImg" src="/img/productsNew/product2.jpg" onclick="renderImage('/img/productsNew/product2.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product2.jpg')" class="add-to-cart"><i class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product3.jpg" onclick="renderImage('/img/productsNew/product3.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product3.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+      
+         <div class="pro">
+            <img src="/img/productsNew/product4.jpg" onclick="renderImage('/img/productsNew/product4.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product4.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product5.jpg" onclick="renderImage('/img/productsNew/product5.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product5.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product6.jpg" onclick="renderImage('/img/productsNew/product6.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product6.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product7.jpg" onclick="renderImage('/img/productsNew/product7.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product7.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product8.jpg"  onclick="renderImage('/img/productsNew/product8.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product8.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product9.jpg" onclick="renderImage('/img/productsNew/product9.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product9.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product10.jpg" onclick="renderImage('/img/productsNew/product10.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product10.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product11.jpg" onclick="renderImage('/img/productsNew/product11.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product11.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product12.jpg" onclick="renderImage('/img/productsNew/product12.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product12.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product13.jpg" onclick="renderImage('/img/productsNew/product13.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout T-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product13.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product14.jpg" onclick="renderImage('/img/productsNew/product14.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product14.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product15.jpg" onclick="renderImage('/img/productsNew/product15.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product15.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+         <div class="pro">
+            <img src="/img/productsNew/product16.jpg" onclick="renderImage('/img/productsNew/product16.jpg')" alt="">
+            <div class="des">
+               <span>adidas</span>
+               <h5>Cartoon astrounout t-shirts</h5>
+               <div class="star">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+               </div>
+               <h4>$78</h4>
+            </div>
+            <button onclick="addIconCount(),addCart('/img/productsNew/product16.jpg')" class="add-to-cart"><i
+                  class='bx bxs-shopping-bags'></i></button>
+         </div>
+      </div>
+   </section>
+
+   <section id="pagination" class="section-p1">
+      <a id="link__1" href="shop.html">1</a>
+      <a id="link__2" href="shop2.html">2</a>
+      <a id="link__3" class="arrow" href="#">↑</a>
+   </section>
+
+   <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+         <h4>Sign Up For Newsletters</h4>
+         <p>Get E-mail updates about our latest shop and <span>special offers</span> special offeres</p>
+      </div>
+      <div class="form">
+         <input type="email" placeholder="Your email address">
+         <button class="normal">Sign up</button>
+      </div>
+   </section>
+
+   <footer class="section-p1">
+      <div class="col">
+         <img class="logo" src="../img/logo.png" alt="">
+         <h4>Contact</h4>
+         <p><strong>Address:</strong> 213 Welling Road, st 34</p>
+         <p><strong>Hours: </strong>10:00 - 19:00, Mon - Sat</p>
+         <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+               <i class='bx bxl-facebook-circle'></i>
+               <i class='bx bxl-instagram'></i>
+               <i class='bx bxl-youtube'></i>
+               <i class='bx bxl-twitter'></i>
+            </div>
+         </div>
+      </div>
+      <div class="col">
+         <h4>About</h4>
+         <p><a href="#">About us</a></p>
+         <p><a href="#">Delivery Informatoni</a></p>
+         <p><a href="#">Privacy Policy</a></p>
+         <p><a href="#">Terms & Conditions</a></p>
+         <p><a href="#">Contact Us</a></p>
+      </div>
+      <div class="col">
+         <h4>My account</h4>
+         <p><a href="#">Sign In</a></p>
+         <p><a href="#">View Cart</a></p>
+         <p><a href="#">My wishlist</a></p>
+         <p><a href="#">Track My order</a></p>
+         <p><a href="#">Help</a></p>
+      </div>
+      <div class="col install">
+         <h4>Install app</h4>
+         <p>From app store or Google play</p>
+         <div class="row">
+            <img src="../img/pay/app.jpg" alt="">
+            <img src="../img/pay/play.jpg" alt="">
+         </div>
+         <p>Secured Payment Gateways</p>
+         <img src="../img/pay/pay.png" alt="">
+      </div>
+
+      <div class="copyright">
+         <p>&copy; 2023, Maksym Sovyk - Portfolio website</p>
+      </div>
+   </footer>
+
+      <section id="added-cart" class="added-cart">
+         <div class="cart__item">
+            <p class="cart__text">
+               You seccesfuly added item to your cart
+            </p>
+         </div>
+      </section>
+
+   <script src="../js/script.js"></script>
+</body>
+
+</html>

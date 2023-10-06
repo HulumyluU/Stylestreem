@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ecmo</title>
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+   <section id="header">
+      <a href="../index.html"><img src="/img/logo.png" class="logo" alt=""></a>
+      <div>
+         <ul id="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="cart.html"><i class='bx bx-shopping-bag'></i></a><span class="lg-bag"></span></li>
+            <a href="#" id="close"><i class='bx bx-x-circle'></i></a>
+         </ul>
+      </div>
+      <div id="mobile">
+         <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+         <i id="bar" class='bx bx-menu-alt-right'></i>
+      </div>
+   </section>
+
+   <section id="page-header">
+   </section>
+
+   <section id="cart1">
+      <table id="cart__table1" width="100%">
+         <thead>
+            <tr>
+               <td>Remove</td>
+               <td>Image</td>
+               <td>Product</td>
+               <td>Price</td>
+               <td>Tax</td>
+            </tr>
+         </thead>
+      </table>
+   </section>
+
+   <section id="cart">
+      <table id="cart__table" width="100%">
+         <thead>
+            <tr>
+               <td>Remove</td>
+               <td>Image</td>
+               <td>Product</td>
+               <td>Price</td>
+               <td>Quantity</td>
+               <td>Subtotal</td>
+            </tr>
+         </thead>
+         <tbody>
+
+         </tbody>
+      </table>
+   </section>
+
+   <section id="total-price">
+      <div class="price">
+         <h3>Your total pricce is : <span id="dollar">$</span><span id="amount">0</span></h3>
+         <button class="pay">Pay</button>
+      </div>
+   </section>
+
+   <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+         <h4>Sign Up For Newsletters</h4>
+         <p>Get E-mail updates about our latest shop and <span>special offers</span> special offeres</p>
+      </div>
+      <div class="form">
+         <input type="email" placeholder="Your email address">
+         <button class="normal">Sign up</button>
+      </div>
+   </section>
+
+   <footer class="section-p1">
+      <div class="col">
+         <img class="logo" src="../img/logo.png" alt="">
+         <h4>Contact</h4>
+         <p><strong>Address:</strong> 213 Welling Road, st 34</p>
+         <p><strong>Hours: </strong>10:00 - 19:00, Mon - Sat</p>
+         <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+               <i class='bx bxl-facebook-circle'></i>
+               <i class='bx bxl-instagram'></i>
+               <i class='bx bxl-youtube'></i>
+               <i class='bx bxl-twitter'></i>
+            </div>
+         </div>
+      </div>
+      <div class="col">
+         <h4>About</h4>
+         <p><a href="#">About us</a></p>
+         <p><a href="#">Delivery Informatoni</a></p>
+         <p><a href="#">Privacy Policy</a></p>
+         <p><a href="#">Terms & Conditions</a></p>
+         <p><a href="#">Contact Us</a></p>
+      </div>
+      <div class="col">
+         <h4>My account</h4>
+         <p><a href="#">Sign In</a></p>
+         <p><a href="#">View Cart</a></p>
+         <p><a href="#">My wishlist</a></p>
+         <p><a href="#">Track My order</a></p>
+         <p><a href="#">Help</a></p>
+      </div>
+      <div class="col install">
+         <h4>Install app</h4>
+         <p>From app store or Google play</p>
+         <div class="row">
+            <img src="../img/pay/app.jpg" alt="">
+            <img src="../img/pay/play.jpg" alt="">
+         </div>
+         <p>Secured Payment Gateways</p>
+         <img src="../img/pay/pay.png" alt="">
+      </div>
+
+      <div class="copyright">
+         <p>&copy; 2023, Maksym Sovyk - Portfolio website</p>
+      </div>
+   </footer>
+
+   <script>
+      const showPriceFunction = function(){
+         let totalPrice = cart.length * 88;
+         document.getElementById('amount').textContent = totalPrice;
+      }
+      
+      const cartItemsList = document.getElementById('cart__table');
+         // Retrieve the cart data from localStorage
+         let cart = JSON.parse(localStorage.getItem('cart')) || [];
+         function removeItem(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCartItems();
+         }
+
+         function displayCartItems() {
+            try {
+               cartItemsList.innerHTML = ''; // Clear the current cart display
+               cart.forEach((productData, index) => {
+                  const cartItem = document.createElement('tbody');
+                  const html = 
+                  `<tr>
+                        <td><button class="delete-button"><i class='bx bx-x'></i></button></td>
+                        <td><img id="imgCart1" src="${productData.name}" alt=""></td>
+                        <td>T-Shirts</td>
+                        <td><span class="hidden-cart">Price: </span>$78</td>
+                        <td><span class="hidden-cart">Tax: </span>$10</td>
+                     </tr>`;
+                  cartItem.insertAdjacentHTML('beforeend', html);
+                  const deleteButton = cartItem.querySelector('.delete-button');
+                  deleteButton.addEventListener('click', () => {
+                     removeItem(index);
+                     showPriceFunction();
+                  });
+                  cartItemsList.appendChild(cartItem);
+                  showPriceFunction();
+               });
+            } catch (err) {
+               alert(err);
+            }
+         }
+         displayCartItems();
+   </script>
+
+   <script src="../js/script.js"></script>
+</body>
+
+</html>

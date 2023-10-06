@@ -1,0 +1,101 @@
+/**header**/
+
+#header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 80px;
+   background: var(--background-color);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+
+#navbar {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#navbar li {
+   list-style: none;
+   padding: 0 20px;
+   position: relative;
+}
+
+#navbar li a {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 600;
+   color: var(--secound-text-color);
+   transition: 0.3 ease;
+}
+
+#header li a:hover,
+#header li a.active {
+   color: var(--main-color);
+}
+
+#navbar li a.active::after,
+#header li a:hover::after {
+   content: "";
+   width: 30%;
+   height: 2px;
+   background: var(--main-color);
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+
+.logo {
+   width: 90px;
+}
+
+/**mobile menu HAMBURGER !!!!!!!!!!!!!!!!!!!!**/
+#mobile {
+   display: none;
+   align-items: center;
+}
+
+#close {
+   display: none;
+}
+
+/*added to cart*/
+
+.cart__item {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   background-color: var(--main-color);
+   padding: 10px;
+   z-index: 1000;
+   min-height: 50px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   animation: slideIn 0.5s;
+   border-radius: 10px;
+}
+
+.cart__text{
+   color: #fff;
+   font-weight: 600;  
+}
+
+.added-cart{
+   display: none;
+}
+
+
+@keyframes slideIn {
+   0% {
+      transform: translateX(+100%);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+
